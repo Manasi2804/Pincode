@@ -9,9 +9,9 @@ function validation()
 {
    if [[ $1 =~ $2  ]]
    then
-      echo " Valid"
+      echo "$1 is Valid"
    else
-      echo " Invalid"
+      echo "$1 is Invalid"
    fi
 }
 
