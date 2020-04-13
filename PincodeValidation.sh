@@ -2,16 +2,16 @@
 
 echo "Enter the Pincode"
 read Pincode
-PinCodePattern="^[0-9]{6}$"
+PinCodePattern="^[1-9]{1}[0-9]{2}[ ]?[0-9]{3}$"
 
 # check for pincode validation
 function validation()
 {
    if [[ $1 =~ $2  ]]
    then
-      echo "$1 is Valid"
+      echo "Valid"
    else
-      echo "$1 is Invalid"
+      echo "Invalid"
    fi
 }
 
